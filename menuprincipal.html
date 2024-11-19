@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuedaSegura</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .navbar {
+            width: 100%;
+            background-color: #000000;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 0;
+            border-bottom: 3px solid #001CDB;
+        }
+
+        .navbar .logo {
+            font-size: 1.4rem;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .navbar .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .navbar .menu li {
+            margin-left: 25px;
+        }
+
+        .navbar .menu li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .navbar .menu li a:hover {
+            transform: scale(1.1);
+            color: #e6e6e6;
+        }
+
+        .logo-container {
+            width: 90%;
+            max-width: 600px;
+            height: 150px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            margin: 50px 0 20px;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-container img {
+            width: 250px;
+            height: 100px;
+            object-fit: contain;
+        }
+
+        .content-box {
+            width: 90%;
+            max-width: 600px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            text-align: center;
+            margin-top: -10px;
+            border-left: 5px solid #FFDE59;
+        }
+
+        .content-box h2 {
+            font-family: Arial, sans-serif;
+            font-size: 2rem;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            animation: fadeInOut 2s infinite;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .content-box p {
+            font-size: 1rem;
+            color: #333333;
+            line-height: 1.8;
+            text-align: justify;
+            text-align-last: center;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9rem;
+            border-top: 3px solid #FFDE59;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo">QuedaSegura</a>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="login.html">Login/Cadastro</a></li>
+        </ul>
+    </nav>
+
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo do QuedaSegura">
+    </div>
+
+    <div class="content-box">
+        <h2>Bem-vindo ao QuedaSegura</h2>
+        <p>
+            O <strong>QuedaSegura</strong> é uma solução tecnológica desenvolvida para oferecer mais segurança e tranquilidade 
+            aos idosos e suas famílias. Com um sistema inteligente de detecção de quedas, nosso projeto é capaz de identificar 
+            acidentes em tempo real e acionar ajuda rapidamente, garantindo assistência imediata e eficaz.
+        </p>
+        <p>
+            Para utilizar nossos serviços, é necessário realizar o cadastro na aba <strong>Login/Cadastro</strong>. 
+            Lembre-se de utilizar um e-mail válido, pois todas as notificações serão enviadas para o e-mail cadastrado.
+        </p>
+    </div>
+
+    <footer>
+        Copyright © QuedaSegura 2024. Todos os direitos reservados.
+    </footer>
+</body>
+</html>
